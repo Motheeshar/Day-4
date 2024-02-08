@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table</title>
+    <style>
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background-color: rgba(243, 176, 205, 0.632);
+}
+.container{
+  color: rgba(184, 9, 9);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.inner *{
+  margin: 10px;
+}
+
+table{
+  background-color: white;
+}
+
+table *{
+  padding: 5px;
+}
+
+p > b{
+  font-size: 30px;
+  font-style: italic;
+}
+
+thead{
+  color: white;
+  background-color: rgba(184, 9, 9,0.8);
+}
+th{
+  border: none;
+}
+td{
+  padding: 20px 30px;
+  text-align: center;
+}
+
+tr:nth-child(2n){
+  background-color: aliceblue;
+}
+tr:nth-child(2n) td{
+  border-top: 1px solid rgba(0,0,0, 0.2);
+  border-bottom: 1px solid rgba(0,0,0, 0.2);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" alt="logo" width="200px" />
+      <div class="inner container">
+        <b>Student</b>
+        <b>Courses</b>
+      </div>
+    </div>
+    <div class="main">
+      <p>
+        <b> TIME TABLE </b>
+      </p>
+      <table cellspacing="0">
+        <thead>
+          <th>Day/Period</th>
+          <th>
+            <p>I<br>9.00am - 10.00am</p>
+          </th>
+          <th>
+            <p>II<br>10.00am - 11.00am</p>
+          </th>
+          <th>
+            <p>III<br>11.15am - 12.15pm</p>
+          </th>
+          <th>
+            <p>IV<br>12.15pm - 1.15pm</p>
+          </th>
+          <th>
+            <p>1.15pm - 2.00pm</p>
+          </th>
+          <th>
+            <p>V<br>2.00pm - 5.00pm</p>
+          </th>
+          <th>
+            <p>VI<br>5.30pm - 5.30pm</p>
+          </th>
+        </thead>
+        <tr>
+          <td>
+            <b>Monday</b>
+          </td>
+          <td>Subject2</td>
+          <td>Subject4</td>
+          <td>Subject6</td>
+          <td>Subject8</td>
+          <td rowspan="6">
+            <h2>L<br />U<br />N<br />C<br />H</h2>
+          </td>
+          <td>Subject1</td>
+          <td>Subject5</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Tuesday</b>
+          </td>
+          <td>Subject8</td>
+          <td>Subject2</td>
+          <td>Subject6</td>
+          <td>Subject3</td>
+
+          <td>Subject4</td>
+          <td>Subject7</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Wednesday</b>
+          </td>
+          <td>Subject4</td>
+          <td>Subject5</td>
+          <td>Subject3</td>
+          <td>Subject1</td>
+
+          <td>Subject2</td>
+          <td>Subject6</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Thursday</b>
+          </td>
+          <td>Subject1</td>
+          <td>Subject2</td>
+          <td>Subject6</td>
+          <td>Subject5</td>
+
+          <td>Subject3</td>
+          <td>Subject8</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Friday</b>
+          </td>
+          <td>Subject8</td>
+          <td>Subject4</td>
+          <td>Subject5</td>
+          <td>Subject6</td>
+
+          <td>Subject2</td>
+          <td>Subject1</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Saturday</b>
+          </td>
+          <td>Subject2</td>
+          <td>Subject6</td>
+          <td>Subject4</td>
+          <td>Subject3</td>
+
+          <td>Subject1</td>
+          <td>Subject7</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
